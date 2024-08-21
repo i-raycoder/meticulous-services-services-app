@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meticulous Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+
+    <section id="banner"> 
+        <img src="images/logo.png" class="logo">
+        <div class="banner-text">
+
+            <!-- Hero Title-->
+
+            <h1> Meticulous Services</h1>
+            <p>Sparkle at home, smiles on face.</p>
+
+            <!--Buttons-->
+            <div class="banner-btn">
+                <a href="#"><span></span> Find Out</a>
+                <a href="#"><span></span> More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CLIENT REVIEWS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="menuBtn">
+        <img src="images/menu.png" alt="" id="menu">
+    </div>
+
+    <!--Features-->
+
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us?</h1>
+        </div>
+
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <img src="images/staff.png" alt="">
+                        <!--<i class="fa-regular fa-user-shield"></i>-->
+                    </div>
+                    <div class="feature-text">
+                        <p>Highly experienced Staff that has proven its ability to work and maintain
+                            the hygeine standards along with working with dedication putting
+                            their practical skills learned during training to good use.
+                        </p>
+                    </div>
+                </div>
+
+                <!--2ND FEATURE-->
+
+                <h1>Call For Booking!</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <img src="images/booking.png" alt="">
+                        <!--<i class="fa-regular fa-user-shield"></i>-->
+                    </div>
+                    <div class="feature-text">
+                        <p>we offer the convenience of booking by phone with our friendly staff.
+                        They're happy to answer any questions you have, 
+                        help you choose the perfect option for your needs, and secure your booking quickly and easily.
+                        Call us today at "+46 73 593 19 59" to get started!
+                        </p>
+                    </div>
+                </div>
+
+                <!--3RD FEATURE-->
+
+                <h1>Affordable Prices</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <img src="images/low-cost.png" alt="">
+                        <!--<i class="fa-regular fa-user-shield"></i>-->
+                    </div>
+                    <div class="feature-text">
+                        <p>Whether you're on a tight budget or just looking for the best value, we have something for you.  
+                            Don't let cost hold you back from having a great time! Explore our options and see how much fun you can have without breaking the bank.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="features-img">
+                <img src="images/cleaning-woman.jpg" alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+
+<!--Service-->
+
+    <section id="service">
+
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+
+        <div class="service-box">
+            <div class="single-service">
+                <img src="images/ser-1.jpg" alt="">
+            </div>
+            <div class="single-service">
+                <img src="images/ser-2.jpg" alt="">
+            </div>
+            <div class="single-service">
+                <img src="images/ser-3.jpg" alt="">
+            </div>
+            <div class="single-service">
+                <img src="images/ser-4.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right="0";
+                menu.src = "images/close.png"
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png"
+            }
+        }
+    </script>
+
+</body>
+</html>
